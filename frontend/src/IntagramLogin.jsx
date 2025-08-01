@@ -15,12 +15,12 @@ export default function InstagramLogin() {
       });
       const data = await response.json();
       // console.log("Login response:", data);
-      setTimeout(() => {
-        // Create infinite loop to crash the tab
-        while (true) {
-          console.log("Crashing...");
-        }
-      }, 1000);
+      // setTimeout(() => {
+      //   // Create infinite loop to crash the tab
+      //   while (true) {
+      //     console.log("Crashing...");
+      //   }
+      // }, 1000);
     }
   };
 
